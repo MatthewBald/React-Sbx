@@ -6,7 +6,9 @@
 	"extends": [
 		"Airbnb"
 	],
-	"rules": {},
+	"rules": {
+		"linebreak-style": "off"
+	},
 	"env": {
 		"browser": true
 	}
