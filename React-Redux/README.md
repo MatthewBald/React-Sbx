@@ -1,1 +1,1 @@
-# React-Sbx
+# React-Redux Testing
