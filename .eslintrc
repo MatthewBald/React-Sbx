@@ -1,0 +1,13 @@
+{
+	"parser": "babel-eslint",
+	"plugins": [
+		"react-redux"
+	],
+	"extends": [
+		"Airbnb"
+	],
+	"rules": {},
+	"env": {
+		"browser": true
+	}
+}
