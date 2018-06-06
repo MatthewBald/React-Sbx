@@ -11,11 +11,11 @@ import 'bootstrap';
 import '../index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { selectSubreddit, fetchPosts } from './actions/actions'
+import { selectSubreddit, fetchPostsIfNeeded } from './actions/actions'
 
 store.dispatch(selectSubreddit('reactjs'))
 store
-  .dispatch(fetchPosts('reactjs'))
+  .dispatch(fetchPostsIfNeeded('reactjs'))
   .then(() => console.log(store.getState()))
 
 /*
