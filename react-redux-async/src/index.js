@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import 'bootstrap';
+
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+ReactDOM.render(
+  <h1 className="h1">Hello world.</h1>,
+  document.getElementById('root')
+);
