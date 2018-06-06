@@ -1,12 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// src/index.js
 
-import 'bootstrap';
+import 'babel-polyfill'
 
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-ReactDOM.render(
-  <h1 className="h1">Hello world.</h1>,
-  document.getElementById('root')
-);
+import index from './js/index'
