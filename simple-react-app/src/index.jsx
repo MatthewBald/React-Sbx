@@ -1,10 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import 'bootstrap/dist/css/bootstrap.css';
+import Loadable from 'react-loadable';
+import Loading from './js/Loading';
 import './index.css';
 
-import App from './js/App';
+const App = Loadable({
+  loader: () => import('./js/App'),
+  loading: Loading,
+});
 
 ReactDOM.render(
   <App />,
