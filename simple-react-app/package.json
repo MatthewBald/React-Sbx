@@ -4,6 +4,7 @@
   "description": "React Seed using webpack & babel",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "start": "webpack-dev-server -d --mode development --open",
     "build:prod": "webpack --mode production"
   },
@@ -11,15 +12,18 @@
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "bootstrap": "^4.1.1",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-standard": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "jquery": "^3.3.1",
@@ -30,6 +34,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "bootstrap": "^4.1.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   }

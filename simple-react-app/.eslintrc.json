@@ -1,9 +1,5 @@
 {
-  "extends": "standard",
-  "plugins": [
-    "standard",
-    "promise"
-  ],
+  "extends": "airbnb",
   "env": {
     "browser": true
   }
