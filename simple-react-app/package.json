@@ -1,24 +1,20 @@
 {
-  "name": "react-redux-async",
+  "name": "simple-react-app",
   "version": "1.0.0",
-  "description": "Familiarizing self with React + Redux",
+  "description": "React Seed using webpack & babel",
   "main": "index.js",
   "scripts": {
-		"debug": "webpack-dev-server -d --mode development --open",
     "start": "webpack-dev-server -d --mode development --open",
-		"build:prod": "webpack --mode production",
-		"build:dev": "webpack --devtool source-map --mode development"
+    "build:prod": "webpack --mode production"
   },
-  "author": "Matthew Bald",
+  "author": "matthew bald",
   "license": "ISC",
   "devDependencies": {
-    "babel-polyfill": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "bootstrap": "^4.1.1",
-    "cross-fetch": "^2.2.1",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
@@ -35,10 +31,6 @@
   },
   "dependencies": {
     "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "react-dom": "^16.4.0"
   }
 }
