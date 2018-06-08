@@ -1,9 +1,13 @@
 // src/shared/App.js
 
-import React from 'react';
+import React, { Component } from 'react';
 
-const App = () => (
-  <div>Hello World</div>
-);
+class App extends Component {
+  render() {
+    return (
+      <div>Hello {this.props.data}</div>
+    );
+  };
+}
 
 export default App;

@@ -1,12 +1,12 @@
 {
   "name": "simple-react-app",
   "version": "1.0.0",
-  "sideEffects": false,
   "description": "React Seed using webpack & babel",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "start": "webpack -w & nodemon server.js"
+		"dev": "webpack -w",
+		"start": "nodemon server.js"
   },
   "author": "matthew bald",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "^3.5.1",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",

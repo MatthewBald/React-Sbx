@@ -1,11 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
+const nodeExternals = require('webpack-node-externals');
 
 const browserConfig = {
   entry: './src/browser/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: '[name].bundle.js',
+    filename: 'bundle.js',
     publicPath: '/'
   },
   module: {
@@ -26,6 +27,7 @@ const browserConfig = {
 const serverConfig = {
   entry: './src/server/index.js',
   target: 'node',
+  externals: [nodeExternals()],
   output: {
     path: __dirname,
     filename: 'server.js',
